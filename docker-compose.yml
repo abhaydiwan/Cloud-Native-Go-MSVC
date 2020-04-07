@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  cloud-native-go-msvc:
+    build: .
+    image: cloud-native-go-msvc:1.0.0
+    environment:
+    - PORT=8090
+    ports:
+    - "8090:8090"
